@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+        <fx:include fx:id="sideBar" source="Sidebar.fxml" />
+    </left>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="Festivals">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="33.0" prefWidth="574.0">
+               <children>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="56.0" text="Search">
+                     <HBox.margin>
+                        <Insets left="50.0" right="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="keywordTextField" promptText="Type something..." />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <TableView prefHeight="400.0" prefWidth="574.0">
+              <columns>
+                <TableColumn fx:id="FestivalName" prefWidth="83.0" text="Name" />
+                <TableColumn fx:id="FFestivalD" prefWidth="69.0" text="Date" />
+                <TableColumn fx:id="CharFather" prefWidth="101.0" text="Character" />
+                <TableColumn fx:id="FestivalEvent" prefWidth="87.0" text="Event" />
+                <TableColumn fx:id="FestivalRelic" prefWidth="99.0" text="Relic" />
+                <TableColumn fx:id="FestivalSource" prefWidth="134.0" text="Source" />                
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

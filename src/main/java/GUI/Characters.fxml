@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+        <fx:include fx:id="sideBar" source="Sidebar.fxml" />
+    </left>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" text="Characters">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="33.0" prefWidth="574.0">
+               <children>
+                  <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="56.0" text="Search">
+                     <HBox.margin>
+                        <Insets left="50.0" right="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="keywordTextField" promptText="Type something..." />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <TableView prefHeight="400.0" prefWidth="574.0">
+              <columns>
+                <TableColumn fx:id="CharName" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="CharAlias" prefWidth="90.0" text="Aliases" />
+                <TableColumn fx:id="CharFather" prefWidth="73.0" text="Father" />
+                <TableColumn fx:id="CharChildren" prefWidth="62.0" text="Children" />
+                <TableColumn fx:id="CharLife" prefWidth="94.0" text="Life" />
+                <TableColumn fx:id="CharCrowned" prefWidth="68.0" text="Crowned" />
+                <TableColumn fx:id="CharSource" prefWidth="111.0" text="Source" />                
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

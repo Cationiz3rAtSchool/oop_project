@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="110.0" spacing="15.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SidebarControler">
+   <children>
+      <Button mnemonicParsing="false" onAction="#switchToMain" prefHeight="20.0" prefWidth="80.0" text="Home">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#switchToCharacters" prefHeight="20.0" prefWidth="80.0" text="Characters" />
+      <Button mnemonicParsing="false" onAction="#switchToRelics" prefHeight="20.0" prefWidth="80.0" text="Relics" />
+      <Button mnemonicParsing="false" onAction="#switchToEras" prefHeight="20.0" prefWidth="80.0" text="Reign" />
+      <Button mnemonicParsing="false" onAction="#switchToEvents" prefHeight="20.0" prefWidth="80.0" text="Events" />
+      <Button mnemonicParsing="false" onAction="#switchToFestivals" prefHeight="20.0" prefWidth="80.0" text="Festivals" />
+      <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="80.0" text="Kings" />
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="15.0" right="15.0" top="100.0" />
+   </padding>
+</VBox>
