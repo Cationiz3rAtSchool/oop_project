@@ -57,9 +57,7 @@ public class CharactersController implements Initializable {
 
 		@Override
 		public void initialize(URL arg0, ResourceBundle arg1) {
-			CharList = FXCollections.observableArrayList(
-	                new Characters("Chau", "ChauN", "Cha","con","86","1945","wwww")
-	        );
+
 			// TODO Auto-generated method stub
 	        CharName.setCellValueFactory(new PropertyValueFactory<Characters, String>("Name"));
 	        CharChildren.setCellValueFactory(new PropertyValueFactory<Characters, String>("Children"));
